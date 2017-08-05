@@ -13,5 +13,6 @@ public class TestShipmentService implements ShipmentService {
     @Override
     public void ship(Order order) {
         this.shippedOrder = order;
+        order.ship();
     }
 }
